@@ -30,11 +30,6 @@ def login():
         if cur is not None:
             cur.close()
         conn.close()
-        
-        
-    
-    
-    
 
 
 def ensure_user_exists(user_id):

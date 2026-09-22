@@ -2,8 +2,6 @@ from connect_db import connect_db, create_table
 from servie import *
 
 
-
-
 def main():
     create_table()
 
