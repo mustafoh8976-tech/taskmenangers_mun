@@ -31,7 +31,7 @@ def create_table():
         cur = conn.cursor()
         cur.execute(
             """
-            create table if not exists users (
+            create table if not exists users(
             id serial primary key,
             username varchar(100) not null,
             email varchar(100) not null,
@@ -41,7 +41,7 @@ def create_table():
         )
         cur.execute(
             """
-            create table if not exists tasks (
+            create table if not exists tasks(
             id serial primary key,
             user_id int references users(id),
             title varchar(200) not null,
